@@ -1,0 +1,24 @@
+{
+  "name": "static-webpack",
+  "version": "1.0.0",
+  "description": "Responsive website built as static html/js using Webpack",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --config './webpack/webpack.config.js'"
+  },
+  "author": "jlehm",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2"
+  }
+}

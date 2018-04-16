@@ -1,0 +1,37 @@
+@font-face{
+    font-family:'Roboto';
+    src:url('../fonts/Roboto/Roboto-Black.eot');
+    src:url('../fonts/Roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto/Roboto-Black.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
+    font-weight:900;
+    font-style:normal
+}
+@font-face{
+    font-family:'Roboto Light';
+    src:url('../fonts/Roboto-Light/Roboto-Light.eot');
+    src:url('../fonts/Roboto-Light/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype');
+    font-weight:300;
+    font-style:normal
+}
+@font-face{
+    font-family:'Amsi Pro Ultra';
+    src:url('../fonts/AmsiPro-Ultra/AmsiPro-Ultra.eot');
+    src:url('../fonts/AmsiPro-Ultra/AmsiPro-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AmsiPro-Ultra/AmsiPro-Ultra.woff') format('woff'),
+        url('../fonts/AmsiPro-Ultra/AmsiPro-Ultra.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face{
+    font-family:'Amsi Pro';
+    src:url('../fonts/AmsiPro/AmsiPro-Light.eot');
+    src:url('../fonts/AmsiPro/AmsiPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AmsiPro/AmsiPro-Light.woff') format('woff'),
+        url('../fonts/AmsiPro/AmsiPro-Light.ttf') format('truetype');
+    font-weight:300;
+    font-style:normal
+}
