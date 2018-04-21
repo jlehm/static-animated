@@ -1,9 +1,10 @@
+var webpack = require('webpack');
+var path = require("path");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-var path = require("path");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-
     entry: "./app.js", //relative to root of the application
     output: {
       path: path.join(__dirname, "./dist/"),
@@ -15,6 +16,18 @@ module.exports = {
     },
     module:{
       rules:[
+        {
+          test: /\.js$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+          /*
+            options: {
+              presets: ['@babel/preset-env']
+            }
+          */
+          }
+        },
         {
           test:/\.(s*)css$/,
           use:['style-loader','css-loader','sass-loader']

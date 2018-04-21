@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>static-components</title>
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <script src="bower_components/aos/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay: 100,
+      });
+    </script>
   </head>
   <body>
 
@@ -33,7 +43,7 @@
 
     <section>
       <a class="label">banner</a>
-      <div class="banner-gradient">
+      <div class="banner-gradient" data-aos="flip-up">
           <p>Look at this cool banner!</p>
         </div>
     </section>
@@ -83,7 +93,7 @@
       <a class="label">tiles medium</a>
       <div class="tiles">
         <h2 class="tilesDesc">tiles md</h2>
-        <div class="tile-md"></div>
+        <div class="tile-md" data-aos="flip-up"></div>
         <div class="tile-md"></div>
         <div class="tile-md"></div>
         <div class="tile-md"></div>
@@ -132,7 +142,7 @@
 
     <section>
       <a class="label">splash w/ background</a>
-      <div class="splash-bg">
+      <div class="splash-bg" data-aos="fade-down">
         <p class="txt-lg">splash with background</a>
         <p class="txt-md">surely there will be some smaller text here</a>
       </div>
