@@ -1,0 +1,91 @@
+/**
+ * menubar section styling
+ */
+@import "breakpoint-mixins";
+
+.menubar {
+  min-height: 60px;
+  padding: 0px 25px;  // have to fix this-- needs to be relative to view width
+  overflow: auto;
+  @include for-phone-only {
+    padding: 0;
+  }
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  @include for-phone-only {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    margin: 4vw auto;
+  }
+/*  @include for-tablet-portrait-up {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    margin: 4vw auto;
+  }
+  @include for-tablet-landscape-up {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+  }
+*/
+}
+
+nav {
+  float: right;
+  @include for-phone-only {  //should be bulleted and should have light background to set apart nav element from content
+    float: none;
+    width: 100vw;
+    margin: 5vw auto;
+  }
+
+/*  @include for-tablet-portrait-up {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 65vw;
+    //  min-width: 400px;
+  }
+  @include for-tablet-landscape-up {
+    float: right;
+  }
+*/
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font: bold 1em Amsi Pro;
+  line-height: 50px;
+  display: inline-block;
+  min-width:100px;
+  width:15vw;
+  @include for-phone-only {
+    width: 100%;
+    display: block;
+    height: 2em;
+    font-size: 1.5em;
+  }
+  @include for-tablet-portrait-up {
+    float: left;
+  }
+  @include for-tablet-landscape-up {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font: bold 1em Amsi Pro;
+    line-height: 50px;
+    display: inline-block;
+    min-width:100px;
+    width:15vw;
+  }
+}
+a:hover {
+  color: grey;
+}

@@ -1,0 +1,60 @@
+@import 'breakpoint-mixins';
+
+.icon-spread {
+  background: #333;
+  display: block;
+  padding: 5% 0;
+}
+.icon-spread-group {
+/*
+  margin: 5% auto;
+  display: block;
+  width: 82vw;
+  padding: 0;
+*/
+  margin: 5% auto;
+  display: block;
+  width: 85vw;
+  padding: 0;
+  overflow: auto;
+  @include for-phone-only {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+.icon-spread-item {
+/*
+  margin: 0;
+  padding: 0;
+  height: 20vw;
+  width: 20vw;
+  min-height: 100px;
+  min-width: 100px;
+  display: inline-block;
+*/
+  margin: 0.6125vw;
+  padding: 0;
+  height: 20vw;
+  width: 20vw;
+  min-height: 100px;
+  min-width: 100px;
+  float: left;
+  @include for-phone-only {
+    margin: 1.25vw;
+    padding: 0;
+    height: 42.5vw;
+    width: 42.5vw;
+  }
+}
+.icon01 {
+  background: cadetblue;//url('../images/icon01.png') center/cover no-repeat; // cadetblue;
+}
+.icon02 {
+  background: cadetblue;// url('../images/icon02.png') center/cover no-repeat; // cadetblue;
+}
+.icon03 {
+  background: cadetblue;// url('../images/icon03.png') center/cover no-repeat; // cadetblue;
+}
+.icon04 {
+  background: cadetblue;// url('../images/icon04.png') center/cover no-repeat; // cadetblue;
+}

@@ -1,0 +1,42 @@
+@import 'breakpoint-mixins';
+
+.login-form {
+  min-height: 150px;
+  margin: 10%;
+  display: block;
+}
+.login-input {
+  width: 45%;
+  min-width: 200px;
+  margin: 2% 27.5%;
+  float: left;
+  border-width: 0 0 2px 0;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: 'Arial';
+  text-align: center;
+  @include for-phone-only {
+    width: 60%;
+    margin: 3% 20%;
+  }
+}
+.login-submit {
+  width: 30%;
+  height: 2.2em;
+  min-width: 100px;
+  margin: 2% 35%;
+  border-width: 0;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: 'arial';
+  border-radius: 0.25em;
+  color: white;
+  background-color: #1fc8db;
+  @include for-phone-only {
+    width: 60%;
+    margin: 3% 20%;
+  }
+}
+.login-input:focus {
+  outline: none;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>static-components</title>
+    <!--<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">-->
+
+    <script src="aos/dist/aos.js"></script>
+    <link rel="stylesheet" href="">
+
+    <!--<link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />-->
+    <!--<script src="../node_modules/aos/dist/aos.js"></script>-->
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+        <script>
+          requirejs.config({
+              baseUrl: '../dist',
+          });
+
+          require(['aos'], function(AOS){
+              AOS.init({
+                  easing: 'ease-in-out-sine'
+              });
+          });
+    </script> -->
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <a class="label">menubar</a>
+      <div class="menubar">
+        <div class="logo">
+          <svg class="menuLogo" viewBox="-30 -80 360 355" width="50" height="50">
+            <use xlink:href="#brandSVG"/>
+          </svg>
+        </div>
+        <nav>
+          <a href="">Concept</a>
+          <a href="">Structure</a>
+          <a href="">Team</a>
+          <a href="">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <a class="label">splash</a>
+      <div class="splash">
+        <p class="txt-lg">static-components</a>
+        <p class="txt-md">Responsive website built as static html/js using Webpack</a>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">banner</a>
+      <div class="banner-gradient" data-aos="flip-up">
+          <p>Look at this cool banner!</p>
+        </div>
+    </section>
+
+    <section>
+      <a class="label">one column</a>
+      <div class="oneColumn">
+        <h2>one column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eros sit amet augue maximus faucibus eget ut justo. Donec venenatis diam ante, sit amet malesuada erat auctor at. Suspendisse interdum tortor sed leo mollis, sed gravida tellus elementum. Nullam accumsan tincidunt urna, vitae euismod nunc congue vel. Aliquam erat volutpat. Mauris interdum egestas quam, nec viverra turpis. Sed in enim sit amet mauris euismod cursus. Phasellus nec metus faucibus, maximus purus id, consectetur sem. Proin dapibus nibh sed fermentum sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">two column</a>
+      <div class="twoColumn">
+        <h2>two column</h2>
+        <p>Proin ipsum felis, gravida non tincidunt ac, gravida et tortor. Maecenas tortor elit, consectetur bibendum nisl a, iaculis suscipit turpis. Curabitur id molestie arcu. Mauris sed bibendum metus. Nullam id turpis ac massa vehicula consectetur. Sed rhoncus mollis neque suscipit dignissim. Sed et tellus leo. Nam gravida nunc eget arcu laoreet, id vehicula lacus imperdiet. Morbi ut ligula interdum elit sollicitudin consectetur. Duis nec justo condimentum est ornare iaculis in vel leo. In fermentum molestie dui non blandit. Morbi nec metus blandit, tempor diam ac, placerat nibh. Phasellus et rhoncus ex. Pellentesque pellentesque volutpat nisl, non tincidunt neque maximus quis.</p>
+        <p>Suspendisse ante ligula, imperdiet eget maximus in, gravida ut elit. Aliquam urna quam, faucibus nec mollis nec, varius ac enim. Donec sagittis maximus nunc vitae feugiat. Maecenas condimentum non nisi in pretium. Aliquam sodales sapien id enim sodales convallis. Fusce scelerisque gravida est, et volutpat nisl maximus vel. Praesent et elementum purus, at vestibulum ligula. Suspendisse pulvinar viverra consectetur. Cras ac dolor lectus. Cras quis mollis eros, sit amet luctus eros. Maecenas id consequat nisi, eu pharetra nisl. In venenatis non tortor eget consequat. Donec ullamcorper dui vitae ipsum pretium, pharetra egestas tortor convallis.</p>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">three column</a>
+      <div class="threeColumn">
+        <h2>three column</h2>
+        <p>Proin ipsum felis, gravida non tincidunt ac, gravida et tortor. Maecenas tortor elit, consectetur bibendum nisl a, iaculis suscipit turpis. Curabitur id molestie arcu. Mauris sed bibendum metus. Nullam id turpis ac massa vehicula consectetur. Sed rhoncus mollis neque suscipit dignissim. Sed et tellus leo. Nam gravida nunc eget arcu laoreet, id vehicula lacus imperdiet. Morbi ut ligula interdum elit sollicitudin consectetur. Duis nec justo condimentum est ornare iaculis in vel leo. In fermentum molestie dui non blandit. Morbi nec metus blandit, tempor diam ac, placerat nibh. Phasellus et rhoncus ex. Pellentesque pellentesque volutpat nisl, non tincidunt neque maximus quis.</p>
+        <p>Suspendisse ante ligula, imperdiet eget maximus in, gravida ut elit. Aliquam urna quam, faucibus nec mollis nec, varius ac enim. Donec sagittis maximus nunc vitae feugiat. Maecenas condimentum non nisi in pretium. Aliquam sodales sapien id enim sodales convallis. Fusce scelerisque gravida est, et volutpat nisl maximus vel. Praesent et elementum purus, at vestibulum ligula. Suspendisse pulvinar viverra consectetur. Cras ac dolor lectus. Cras quis mollis eros, sit amet luctus eros. Maecenas id consequat nisi, eu pharetra nisl. In venenatis non tortor eget consequat. Donec ullamcorper dui vitae ipsum pretium, pharetra egestas tortor convallis.</p>
+        <p>Suspendisse ante ligula, imperdiet eget maximus in, gravida ut elit. Aliquam urna quam, faucibus nec mollis nec, varius ac enim. Donec sagittis maximus nunc vitae feugiat. Maecenas condimentum non nisi in pretium. Aliquam sodales sapien id enim sodales convallis. Fusce scelerisque gravida est, et volutpat nisl maximus vel. Praesent et elementum purus, at vestibulum ligula. Suspendisse pulvinar viverra consectetur. Cras ac dolor lectus. Cras quis mollis eros, sit amet luctus eros. Maecenas id consequat nisi, eu pharetra nisl. In venenatis non tortor eget consequat. Donec ullamcorper dui vitae ipsum pretium, pharetra egestas tortor convallis.</p>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">profile</a>
+      <div class="profile">
+        <div class="img-wrap">
+          <a class="img-00"></a>
+        </div>
+        <div class="profile-contents">
+          <h2 class="profile-txt">First M. Last</h2>
+          <h3 class="profile-txt">descriptor</h3>
+          <p>Proin ipsum felis, gravida non tincidunt ac, gravida et tortor. Maecenas tortor elit, consectetur bibendum nisl a, iaculis suscipit turpis. Curabitur id molestie arcu. Mauris sed bibendum metus. Nullam id turpis ac massa vehicula consectetur. Sed rhoncus mollis neque suscipit dignissim. Sed et tellus leo. Nam gravida nunc eget arcu laoreet, id vehicula lacus imperdiet. Morbi ut ligula interdum elit sollicitudin consectetur. Duis nec justo condimentum est ornare iaculis in vel leo. In fermentum molestie dui non blandit. Morbi nec metus blandit, tempor diam ac, placerat nibh. Phasellus et rhoncus ex. Pellentesque pellentesque volutpat nisl, non tincidunt neque maximus quis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">tiles medium</a>
+      <div class="tiles">
+        <h2 class="tilesDesc">tiles md</h2>
+        <div class="tile-md" data-aos="flip-up"></div>
+        <div class="tile-md"></div>
+        <div class="tile-md"></div>
+        <div class="tile-md"></div>
+        <div class="tile-md"></div>
+        <div class="tile-md"></div>
+        <div class="tile-md"></div>
+        <div class="tile-md"></div>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">tiles large</a>
+      <div class="tiles">
+        <h2 class="tilesDesc">tiles lg</h2>
+        <div class="tile-lg"></div>
+        <div class="tile-lg"></div>
+        <div class="tile-lg"></div>
+        <div class="tile-lg"></div>
+        <div class="tile-lg"></div>
+        <div class="tile-lg"></div>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">tiles xtra large</a>
+      <div class="tiles">
+        <h2 class="tilesDesc">tiles xl</h2>
+        <div class="tile-xl"></div>
+        <div class="tile-xl"></div>
+        <div class="tile-xl"></div>
+        <div class="tile-xl"></div>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">tall split banner</a>
+      <div class="banner-tall-split">
+          <div class="split-left">
+            <p class="split-text">left side</p>
+          </div>
+          <div class="split-right">
+            <p class="split-text">right side</p>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">splash w/ background</a>
+      <div class="splash-bg" data-aos="fade-down">
+        <p class="txt-lg">splash with background</a>
+        <p class="txt-md">surely there will be some smaller text here</a>
+      </div>
+    </section>
+
+  </body>
+
+  <svg class="defs-only" xmlns="http://www.w3.org/2000/svg" style=" height: 0px; width: 0px; ">
+    <symbol id="brandSVG">
+      <polygon  class="st0" points="211.7,91 150,1 149.4,1 88,91 0,1 0,1 0,217 300,217 300,1 " fill="#1fc8db"/>
+    </symbol>
+  </svg>
+
+</html>

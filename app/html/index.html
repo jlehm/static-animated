@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>static-components</title>
-    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
-    <script src="bower_components/aos/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 200,
-        duration: 600,
-        easing: 'ease-in-sine',
-        delay: 100,
-      });
-    </script>
+    <meta name="viewport" content="width=device-width">
   </head>
   <body>
 
@@ -20,9 +11,15 @@
       <a class="label">menubar</a>
       <div class="menubar">
         <div class="logo">
+          <!--
           <svg class="menuLogo" viewBox="-30 -80 360 355" width="50" height="50">
             <use xlink:href="#brandSVG"/>
           </svg>
+          -->
+          <svg class="menuLogo" viewBox="0 -30 300 250">
+            <use xlink:href="#brandSVG"/>
+          </svg>
+
         </div>
         <nav>
           <a href="">Concept</a>
@@ -50,7 +47,7 @@
 
     <section>
       <a class="label">one column</a>
-      <div class="oneColumn">
+      <div class="one-column">
         <h2>one column</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet eros sit amet augue maximus faucibus eget ut justo. Donec venenatis diam ante, sit amet malesuada erat auctor at. Suspendisse interdum tortor sed leo mollis, sed gravida tellus elementum. Nullam accumsan tincidunt urna, vitae euismod nunc congue vel. Aliquam erat volutpat. Mauris interdum egestas quam, nec viverra turpis. Sed in enim sit amet mauris euismod cursus. Phasellus nec metus faucibus, maximus purus id, consectetur sem. Proin dapibus nibh sed fermentum sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
@@ -58,7 +55,7 @@
 
     <section>
       <a class="label">two column</a>
-      <div class="twoColumn">
+      <div class="two-column">
         <h2>two column</h2>
         <p>Proin ipsum felis, gravida non tincidunt ac, gravida et tortor. Maecenas tortor elit, consectetur bibendum nisl a, iaculis suscipit turpis. Curabitur id molestie arcu. Mauris sed bibendum metus. Nullam id turpis ac massa vehicula consectetur. Sed rhoncus mollis neque suscipit dignissim. Sed et tellus leo. Nam gravida nunc eget arcu laoreet, id vehicula lacus imperdiet. Morbi ut ligula interdum elit sollicitudin consectetur. Duis nec justo condimentum est ornare iaculis in vel leo. In fermentum molestie dui non blandit. Morbi nec metus blandit, tempor diam ac, placerat nibh. Phasellus et rhoncus ex. Pellentesque pellentesque volutpat nisl, non tincidunt neque maximus quis.</p>
         <p>Suspendisse ante ligula, imperdiet eget maximus in, gravida ut elit. Aliquam urna quam, faucibus nec mollis nec, varius ac enim. Donec sagittis maximus nunc vitae feugiat. Maecenas condimentum non nisi in pretium. Aliquam sodales sapien id enim sodales convallis. Fusce scelerisque gravida est, et volutpat nisl maximus vel. Praesent et elementum purus, at vestibulum ligula. Suspendisse pulvinar viverra consectetur. Cras ac dolor lectus. Cras quis mollis eros, sit amet luctus eros. Maecenas id consequat nisi, eu pharetra nisl. In venenatis non tortor eget consequat. Donec ullamcorper dui vitae ipsum pretium, pharetra egestas tortor convallis.</p>
@@ -67,14 +64,27 @@
 
     <section>
       <a class="label">three column</a>
-      <div class="threeColumn">
+      <div class="three-column">
         <h2>three column</h2>
-        <p>Proin ipsum felis, gravida non tincidunt ac, gravida et tortor. Maecenas tortor elit, consectetur bibendum nisl a, iaculis suscipit turpis. Curabitur id molestie arcu. Mauris sed bibendum metus. Nullam id turpis ac massa vehicula consectetur. Sed rhoncus mollis neque suscipit dignissim. Sed et tellus leo. Nam gravida nunc eget arcu laoreet, id vehicula lacus imperdiet. Morbi ut ligula interdum elit sollicitudin consectetur. Duis nec justo condimentum est ornare iaculis in vel leo. In fermentum molestie dui non blandit. Morbi nec metus blandit, tempor diam ac, placerat nibh. Phasellus et rhoncus ex. Pellentesque pellentesque volutpat nisl, non tincidunt neque maximus quis.</p>
+        <p>Proin ipsum felis, gravida non tincidunt ac, gravida et tortor. Maecenas tortor elit, consectetur bibendum nisl a, iaculis suscipit turpis. Curabitur id molestie arcu. Mauris sed bibendum metus. Nullam id turpis ac massa vehicula consectetur. Sed rhoncus mollis neque suscipit dignissim. Sed et tellus leo. Nam gravida nunc eget arcu laoreet, id vehicula lacus imperdiet. Morbi ut ligula interdum elit sollicitudin consectetur. Duis nec justo condimentum est ornare iaculis in vel leo. In fermentum molestie dui non blandit. Morbi nec metus blandit, tempor diam ac, placerat nibh. Phasellus et rhoncus ex. </p>
         <p>Suspendisse ante ligula, imperdiet eget maximus in, gravida ut elit. Aliquam urna quam, faucibus nec mollis nec, varius ac enim. Donec sagittis maximus nunc vitae feugiat. Maecenas condimentum non nisi in pretium. Aliquam sodales sapien id enim sodales convallis. Fusce scelerisque gravida est, et volutpat nisl maximus vel. Praesent et elementum purus, at vestibulum ligula. Suspendisse pulvinar viverra consectetur. Cras ac dolor lectus. Cras quis mollis eros, sit amet luctus eros. Maecenas id consequat nisi, eu pharetra nisl. In venenatis non tortor eget consequat. Donec ullamcorper dui vitae ipsum pretium, pharetra egestas tortor convallis.</p>
         <p>Suspendisse ante ligula, imperdiet eget maximus in, gravida ut elit. Aliquam urna quam, faucibus nec mollis nec, varius ac enim. Donec sagittis maximus nunc vitae feugiat. Maecenas condimentum non nisi in pretium. Aliquam sodales sapien id enim sodales convallis. Fusce scelerisque gravida est, et volutpat nisl maximus vel. Praesent et elementum purus, at vestibulum ligula. Suspendisse pulvinar viverra consectetur. Cras ac dolor lectus. Cras quis mollis eros, sit amet luctus eros. Maecenas id consequat nisi, eu pharetra nisl. In venenatis non tortor eget consequat. Donec ullamcorper dui vitae ipsum pretium, pharetra egestas tortor convallis.</p>
       </div>
     </section>
-
+    <section>
+      <a class="label">narrow-wide</a>
+      <div class="narrow-wide">
+        <div class="narrow">
+          <p></p>
+        </div>
+        <div class="wide">
+          <h2 class="narrow-wide-header">header</h2>
+          <h3 class="narrow-wide-subheader">descriptor</h3>
+          <p>Suspendisse ante ligula, imperdiet eget maximus in, gravida ut elit. Aliquam urna quam, faucibus nec mollis nec, varius ac enim. Donec sagittis maximus nunc vitae feugiat. Maecenas condimentum non nisi in pretium. Aliquam sodales sapien id enim sodales convallis. Fusce scelerisque gravida est, et volutpat nisl maximus vel. Praesent et elementum purus, at vestibulum ligula. Suspendisse pulvinar viverra consectetur. Cras ac dolor lectus. Cras quis mollis eros, sit amet luctus eros. Maecenas id consequat nisi, eu pharetra nisl. In venenatis non tortor eget consequat. Donec ullamcorper dui vitae ipsum pretium, pharetra egestas tortor convallis. </p>
+        </div>
+      </div>
+    </section>
+<!--
     <section>
       <a class="label">profile</a>
       <div class="profile">
@@ -88,7 +98,7 @@
         </div>
       </div>
     </section>
-
+-->
     <section>
       <a class="label">tiles medium</a>
       <div class="tiles">
@@ -147,13 +157,124 @@
         <p class="txt-md">surely there will be some smaller text here</a>
       </div>
     </section>
+    <section>
+      <a class="label">login form</a>
+      <div class="login-form">
+        <form>
+          <input type="email" class="login-input" placeholder="account email"></input>
+          <input type="password "class="login-input" placeholder="password"></input>
+          <input type="submit" class="login-submit" value="submit">
+        </form>
+      </div>
+    </section>
+    <section>
+      <a class="label">list banner</a>
+      <div id="list-banner-a" class="list-banner">
+        <div id="li0" class="list-item">item 1
+          <span id="li0h" class="list-item-handle">+</span>
+          <p id="li0x" class="list-item-expander unclicked">This is example text.</p>
+        </div>
+        <div id="li1" class="list-item">item 2
+          <span id="li1h" class="list-item-handle">+</span>
+          <p id="li1x" class="list-item-expander unclicked">This is example text.</p>
+        </div>
+        <div id="li2" class="list-item">item 3
+          <span id="li2h" class="list-item-handle">+</span>
+          <p id="li2x" class="list-item-expander unclicked">This is example text.</p>
+        </div>
+        <div id="li3" class="list-item">item 4
+          <span id="li3h" class="list-item-handle">+</span>
+          <p id="li3x" class="list-item-expander unclicked">This is example text.</p>
+        </div>
+        <div id="li4" class="list-item">item 5
+          <span id="li4h" class="list-item-handle">+</span>
+          <p id="li4x" class="list-item-expander unclicked">This is example text.</p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      /* unfactor
+      function toggle(id){
+        if (document.getElementById(id+"x").classList[document.getElementById(id+"x").classList.length-1]=="unclicked") {
+          document.getElementById(id+"x").classList.remove("unclicked"); document.getElementById(id+"h").innerHTML="-"; }
+        else { document.getElementById(id+"h").innerHTML="+"; document.getElementById(id+"x").classList.add("unclicked") }
+      };
+      */
+      function toggle(id){
+        var x = document.getElementById(id+"x"), h = document.getElementById(id+"h");
+        if (x.classList[x.classList.length-1]=="unclicked") {
+          x.classList.remove("unclicked"); h.innerHTML="-"; }
+        else { h.innerHTML="+"; x.classList.add("unclicked") }
+      };
+      document.getElementById("list-banner-a").addEventListener("click", function(e) {
+        /*if(e.target && e.target.nodeName == "SPAN") {
+          toggle(e.target.parentNode.id);
+        */
+        if(e.target.className == "list-item") {
+          //console.log(e.target.nodeName);
+          toggle(e.target.id);
+        } else if (e.target.parentNode.className == "list-item") {
+         //console.log(e.target.nodeName);
+         toggle(e.target.parentNode.id);
+       }
+      });
+    </script>
+
+    <section>
+      <a class="label">icon spread</a>
+      <div class="icon-spread">
+        <div class="icon-spread-group">
+          <div class="icon01 icon-spread-item"></div>
+          <div class="icon02 icon-spread-item"></div>
+          <div class="icon03 icon-spread-item"></div>
+          <div class="icon04 icon-spread-item"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <a class="label">flip book</a>
+      <div id="flip-book-a" class="flip-book">
+        <div class="flip-book-nav">
+          <div class="flip-book-nav-backwards">
+            <svg id="arrow_left" viewBox="0 -50 96 192" xmlns="http://www.w3.org/2000/svg">
+              <path d="M84,44H21.656l21.456-21.456c1.562-1.562,1.562-4.095,0.001-5.657c-1.562-1.562-4.096-1.562-5.658,0L9.172,45.171l0,0  c-0.186,0.186-0.352,0.391-0.498,0.61c-0.067,0.101-0.114,0.21-0.171,0.315c-0.067,0.124-0.142,0.242-0.196,0.373  c-0.056,0.135-0.088,0.276-0.129,0.416c-0.032,0.111-0.075,0.217-0.098,0.331C8.028,47.475,8,47.737,8,48l0,0  c0,0.003,0.001,0.005,0.001,0.008c0,0.259,0.027,0.519,0.078,0.774c0.024,0.121,0.069,0.232,0.104,0.349  c0.039,0.133,0.07,0.268,0.123,0.397c0.058,0.139,0.136,0.265,0.208,0.396c0.054,0.098,0.096,0.198,0.159,0.292  c0.147,0.221,0.314,0.427,0.501,0.614l28.282,28.281c1.562,1.562,4.095,1.562,5.657,0.001c1.562-1.562,1.562-4.096,0-5.658  L21.657,52H84c2.209,0,4-1.791,4-4S86.209,44,84,44z" style="fill:white;"/>
+            </svg>
+          </div>
+          <div class="flip-book-nav-forwards">
+            <svg id="arrow_right" viewBox="0 -50 96 192" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12,52h62.344L52.888,73.456c-1.562,1.562-1.562,4.095-0.001,5.656c1.562,1.562,4.096,1.562,5.658,0l28.283-28.284l0,0  c0.186-0.186,0.352-0.391,0.498-0.609c0.067-0.101,0.114-0.21,0.172-0.315c0.066-0.124,0.142-0.242,0.195-0.373  c0.057-0.135,0.089-0.275,0.129-0.415c0.033-0.111,0.076-0.217,0.099-0.331C87.973,48.525,88,48.263,88,48l0,0  c0-0.003-0.001-0.006-0.001-0.009c-0.001-0.259-0.027-0.519-0.078-0.774c-0.024-0.12-0.069-0.231-0.104-0.349  c-0.039-0.133-0.069-0.268-0.123-0.397c-0.058-0.139-0.136-0.265-0.208-0.396c-0.054-0.098-0.097-0.198-0.159-0.292  c-0.146-0.221-0.314-0.427-0.501-0.614L58.544,16.888c-1.562-1.562-4.095-1.562-5.657-0.001c-1.562,1.562-1.562,4.095,0,5.658  L74.343,44L12,44c-2.209,0-4,1.791-4,4C8,50.209,9.791,52,12,52z" style="fill:white;"/>
+            </svg>
+          </div>
+        </div>
+        <div id="fp1" class="flip-page fp-1"></div>
+        <div id="fp2" class="flip-page fp-2"></div>
+        <div id="fp3" class="flip-page fp-3"></div>
+      </div>
+    </section>
+    <script type="text/javascript">
+    </script>
+    <section>
+      <a class="label">footer nav</a>
+      <div class="footer-nav">
+        <div class="footer-nav-group">
+          <a href="" class="footer-nav-item">one</a>
+          <a href="" class="footer-nav-item">two</a>
+          <a href="" class="footer-nav-item">three</a>
+          <a href="" class="footer-nav-item">four</a>
+          <a href="" class="footer-nav-item">five</a>
+        </div>
+      </div>
+    </section>
+
 
   </body>
 
-  <svg class="defs-only" xmlns="http://www.w3.org/2000/svg" style=" height: 0px; width: 0px; ">
+  <svg height="0" width="0" class="defs-only" viewBox="0 -30 300 250" xmlns="http://www.w3.org/2000/svg">
     <symbol id="brandSVG">
-      <polygon  class="st0" points="211.7,91 150,1 149.4,1 88,91 0,1 0,1 0,217 300,217 300,1 " fill="#1fc8db"/>
+      <polygon alignment-baseline="middle" points="211.7,91 150,1 149.4,1 88,91 0,1 0,1 0,217 300,217 300,1" fill="#1fc8db"/>
     </symbol>
   </svg>
+
+
 
 </html>

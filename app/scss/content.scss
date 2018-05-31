@@ -1,0 +1,91 @@
+@import 'breakpoint-mixins';
+
+.one-column, .two-column, .three-column {
+  margin: 0 2.5%;
+  h1, h2, h3, p {
+    padding: 0;
+    margin: 1% 1%;
+  }
+}
+.one-column p {
+  float: left;
+  width: 98%;
+}
+.two-column p {
+  float: left;
+  width: 48%;
+  //
+  @include for-phone-only {
+    width: 98%;
+  }
+}
+.three-column p {
+  float: left;
+  width: 31.3%;
+  //
+  @include for-phone-only {
+    width: 98%;
+  }
+  @include for-tablet-portrait-up {
+    width: 98%;
+  }
+  @include for-tablet-landscape-up {
+    width: 31.3%;
+  }
+}
+.narrow-wide-header {
+  margin: 0;
+}
+.narrow-wide-subheader {
+  margin: 0;
+}
+.narrow-wide {
+  margin: 0 2.5%;
+  overflow: auto;
+  h1, h2, h3, p {
+//    padding: 0;
+//    margin: 1% 1%;
+  }
+}
+.narrow {
+  float: left;
+  width: 31.3%;
+  margin: 3% 1%;
+  padding: 0;
+  @include for-phone-only {
+    width: 98%;
+  }
+  p {
+    margin: 0 auto;
+    width: 25vw;
+    height: 25vw;
+    //border-radius: 50%;
+    max-height: 300px;
+    max-width: 300px;
+    background-color:lightgrey;
+    @include for-phone-only {
+      width: 40vw;
+      height: 40vw;
+    }
+  }
+}
+.wide {
+  float: left;
+  width: 64.6%;
+  margin: 1% 1%;
+  padding: 0;
+  @include for-phone-only {
+    width: 98%;
+  }
+  @include for-tablet-portrait-up {
+    //margin-top: 3%;
+    //margin-bottom: 2%;
+  }
+  @include for-tablet-landscape-up {
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+  p {
+    margin: 1% 0;
+  }
+}

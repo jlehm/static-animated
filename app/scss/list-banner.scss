@@ -1,0 +1,44 @@
+.list-banner {
+  min-height: 300px;
+  width: 100%;
+  background: #333;
+  float: left;
+  font-family: 'Amsi Pro';
+  padding: 1em 0 2em 0;
+}
+.list-item {
+  width: 80%;
+  margin: 0% 10%;
+  color: whitesmoke;
+  font-size: 1.5em;
+  line-height: 2.5em;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: lightgrey;
+  p {
+    font-family: 'Roboto-Light';
+    font-size: 0.75em;
+    line-height: normal;
+  }
+}
+.list-item-handle {
+  float: right;
+  font-size: 30px;
+  color: #1fc8db;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.list-item-expander, .list-item p {
+//visibility: hidden;
+  width: 100%;
+}
+.unclicked {
+  display: none;
+}
+.list-item:hover {
+  cursor: pointer;
+  color: white;
+  span {
+    color: aqua;
+  }
+}

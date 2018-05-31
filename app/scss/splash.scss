@@ -1,0 +1,46 @@
+@import 'breakpoint-mixins';
+
+.splash {
+  display: block;
+  padding: 30vh 15vh;
+}
+.txt-lg {
+  font-family: 'Amsi Pro Ultra';
+  font-size: 48px;
+  margin: 0;
+  @include for-phone-only {
+
+  }
+  @include for-tablet-portrait-up {
+
+  }
+  @include for-tablet-landscape-up {
+
+  }
+  @include for-desktop-up {
+    font-size: 60px;
+  }
+  @include for-big-desktop-up {
+    font-size: 60px;
+  }
+}
+.txt-md {
+  font-family: 'Amsi Pro';
+  font-size: 24px;
+  margin: 0;
+  @include for-phone-only {
+
+  }
+  @include for-tablet-portrait-up {
+
+  }
+  @include for-tablet-landscape-up {
+
+  }
+  @include for-desktop-up {
+    font-size: 36px;
+  }
+  @include for-big-desktop-up {
+    font-size: 36px;
+  }
+}

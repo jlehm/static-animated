@@ -17,18 +17,6 @@ module.exports = {
     module:{
       rules:[
         {
-          test: /\.js$/,
-          exclude: /(node_modules|bower_components)/,
-          use: {
-            loader: 'babel-loader',
-          /*
-            options: {
-              presets: ['@babel/preset-env']
-            }
-          */
-          }
-        },
-        {
           test:/\.(s*)css$/,
           use:['style-loader','css-loader','sass-loader']
         },
@@ -43,6 +31,7 @@ module.exports = {
           }]
         },
         {
+          //I don't think that this is working
           test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
           use: [{
               loader: 'file-loader',
@@ -67,10 +56,11 @@ module.exports = {
           to:'images'
       }]),
 // why isn't this working, why do i need to rely on testing for font formats?
+// probably need to include font files in app.js
 /*      new CopyWebpackPlugin([{
           from:'app/fonts',
           to:'fonts'
       }])
-*/ ]
-
+*/
+  ]
 }

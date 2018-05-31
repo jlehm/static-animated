@@ -1,0 +1,79 @@
+.flip-book {
+  height: 40vw;
+  min-height: 200px;
+}
+
+// navigation needs to be replaced with JS //
+.flip-book-nav {
+  display: block;
+  height: 100%;
+  font-size: 5em;
+  font-weight: bold;
+  color: lightgrey;
+  background: rgba(76, 175, 80, 0);
+  div {
+    opacity:0;
+    line-height: 30vw;
+    text-align: center;
+    margin-top: 5vw;
+  }
+  div:hover {
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  svg {
+    path {
+      fill: white;
+      vertical-align: middle;
+    }
+  }
+}
+.flip-book-nav-forwards {
+  height: 30vw;
+  width: 15vw;
+  float:right;
+  background: rgba(0,0,0,0.75);
+  border-radius: 15vw 0 0 15vw;
+  text-align: right;
+}
+.flip-book-nav-backwards {
+  height: 30vw;
+  width: 15vw;
+  float:left;
+  background: rgba(0,0,0,0.75);
+  border-radius: 0 15vw 15vw 0;
+  text-align: left;
+}
+/////
+
+.flip-book-page {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 0;
+}
+.flip-book-content {
+}
+.fp-1 {
+  z-index: -1;
+  background: cadetblue;
+  height: 100%;
+  position: relative;
+  top: -100%;
+}
+.fp-2 {
+  z-index: -2;
+  background: aqua;
+  height: 100%;
+  position: relative;
+  top: -200%;
+}
+.fp-3 {
+  z-index: -3;
+  background: tan;
+  height: 100%;
+  position: relative;
+  top: -300%;
+}

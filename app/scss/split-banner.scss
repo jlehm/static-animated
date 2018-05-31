@@ -1,0 +1,44 @@
+@import 'breakpoint-mixins';
+
+.banner-tall-split {
+  width: 100%;
+  height: 50vw;
+  min-height: 200px;
+}
+.split-left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: gray;
+  @include for-phone-only {
+    width: 100%;
+  }
+  @include for-tablet-portrait-up {
+    width: 100%;
+  }
+  @include for-tablet-landscape-up {
+    width: 50%;
+  }    
+}
+.split-right {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  @include for-phone-only {
+    width: 100%;
+  }
+  @include for-tablet-portrait-up {
+    width: 100%;
+  }
+  @include for-tablet-landscape-up {
+    width: 50%;
+  }
+}
+.split-text {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  margin: 22vw 0 0 0;
+  color: white;
+}
