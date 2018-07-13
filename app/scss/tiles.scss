@@ -4,12 +4,14 @@
 
  .tiles {
    overflow: auto;
-   padding: 0 1.25vw;
+   margin: 0 auto;
+   width: 94vw;
+   //padding: 0 1.25vw;
    //narrow
-   padding: 0 1.875vw;
+   //padding: 0 1.875vw;
  }
  .tilesDesc {
-   padding: 0 0.6125vw;
+   padding: 0 0.75vw;
  }
  // tile-- even spacing
  /*
@@ -23,37 +25,44 @@
  */
  // tile-- narrow spacing
  .tile-md {
-   width: 22.8125vw;
+   width: 22vw;
+   //width: 22.8125vw;
    //min-width: 150px;
-   max-width: 300px;
-   height: 22.8125vw;
+   //max-width: 300px;
+   height: 22vw;
+   //height: 22.8125vw;
    //min-height: 150px;
-   max-height: 300px;
+   //max-height: 300px;
    float: left;
    background: lightgrey;
-   margin: 0.6125vw;
+   margin: 0.75vw;
  }
 
  .tile-lg {  // @500px view width, .tile-lg should transition to 2 tile wide layout
-   width: 30.833vw;
-   min-width: 150px;
-//   max-width: 400px;
-   height: 30.833vw;
-   min-height: 150px;
-//   max-height: 400px;
+   width: 29.75vw;
+   //width: 30.833vw;
+   //min-width: 150px;
+   //max-width: 400px;
+   height: 29.75vw;
+   //height: 30.833vw;
+   //min-height: 150px;
+   //max-height: 400px;
    float: left;
    background: lightgrey;
-   margin: 0.6125vw;
+   margin: 0.75vw;
+   //margin: 0.6125vw;
  }
 
  .tile-xl {
-   width: 46.8875vw;
-   min-width: 150px;
-//   max-width: 500px;
-   height: 46.8875vw;
-   min-height: 150px;
-//   max-height: 500px;
+   width: 45.5vw;
+   //width: 46.8875vw;
+   //min-width: 150px;
+   //max-width: 500px;
+   height: 45.5vw;
+   //height: 46.8875vw;
+   //min-height: 150px;
+   //max-height: 500px;
    float: left;
    background: lightgrey;
-   margin: 0.6125vw;
+   margin: 0.75vw;
  }

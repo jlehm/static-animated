@@ -1,0 +1,44 @@
+.banner-link {
+
+}
+.banner-link-button {
+  //width: 30vw;
+  margin: 0;
+  padding: 10vw 10vw 10vw 0;
+  display: inline-block;
+  float: right;
+}
+.banner-link-button-element {
+  width: 30vw;
+  min-width: 200px;
+  max-width: 400px;
+  height: 100%;
+  min-height: 100px;
+  background: cadetblue;
+  border-radius: 3em;
+  line-height: 100px;
+  text-align: center;
+  font-size: 1.25em;
+  font-family: 'Roboto';
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.banner-link-button-element:hover {
+  background: darkturquoise;
+  color: #666;
+}
+.banner-link-text {
+  font-size: 2.25em;
+  margin: 0;
+  padding: 10vw 0 10vw 10vw;
+  //width: 45vw;
+  display: inline-block;
+}
+.banner-link-text-header {
+  font-size: 2.25em;
+  font-family: 'Amsi Pro Ultra';
+}
+.banner-link p {
+  font-size: 0.7em;
+}

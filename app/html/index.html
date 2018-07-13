@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>static-components</title>
     <meta name="viewport" content="width=device-width">
+    <script src="app.js"></script>
   </head>
   <body>
 
@@ -19,7 +20,6 @@
           <svg class="menuLogo" viewBox="0 -30 300 250">
             <use xlink:href="#brandSVG"/>
           </svg>
-
         </div>
         <nav>
           <a href="">Concept</a>
@@ -71,6 +71,7 @@
         <p>Suspendisse ante ligula, imperdiet eget maximus in, gravida ut elit. Aliquam urna quam, faucibus nec mollis nec, varius ac enim. Donec sagittis maximus nunc vitae feugiat. Maecenas condimentum non nisi in pretium. Aliquam sodales sapien id enim sodales convallis. Fusce scelerisque gravida est, et volutpat nisl maximus vel. Praesent et elementum purus, at vestibulum ligula. Suspendisse pulvinar viverra consectetur. Cras ac dolor lectus. Cras quis mollis eros, sit amet luctus eros. Maecenas id consequat nisi, eu pharetra nisl. In venenatis non tortor eget consequat. Donec ullamcorper dui vitae ipsum pretium, pharetra egestas tortor convallis.</p>
       </div>
     </section>
+
     <section>
       <a class="label">narrow-wide</a>
       <div class="narrow-wide">
@@ -157,16 +158,19 @@
         <p class="txt-md">surely there will be some smaller text here</a>
       </div>
     </section>
-    <section>
+
+    <section class="login-form-wrapper">
       <a class="label">login form</a>
       <div class="login-form">
+        <h2 class="loginDesc">Login</h2>
         <form>
-          <input type="email" class="login-input" placeholder="account email"></input>
-          <input type="password "class="login-input" placeholder="password"></input>
-          <input type="submit" class="login-submit" value="submit">
+          <input type="email" id="login-input-email" class="login-input" placeholder="account email"></input>
+          <input type="password" id="login-input-password" class="login-input" placeholder="password"></input>
+          <input type="submit" id="login-input-submit" class="login-submit" value="submit">
         </form>
       </div>
     </section>
+
     <section>
       <a class="label">list banner</a>
       <div id="list-banner-a" class="list-banner">
@@ -192,6 +196,7 @@
         </div>
       </div>
     </section>
+
     <script type="text/javascript">
       /* unfactor
       function toggle(id){
@@ -231,28 +236,194 @@
         </div>
       </div>
     </section>
+
     <section>
       <a class="label">flip book</a>
       <div id="flip-book-a" class="flip-book">
+        <div id="fp3" class="flip-book-page fp-3">
+          <div class="page-content">
+            <h1>three</h1>
+          </div>
+        </div>
+        <div id="fp2" class="flip-book-page fp-2">
+          <div class="page-content">
+            <h1>two</h1>
+          </div>
+        </div>
+        <div id="fp1" class="flip-book-page fp-1">
+          <div class="page-content">
+            <h1>one</h1>
+          </div>
+        </div>
         <div class="flip-book-nav">
           <div class="flip-book-nav-backwards">
             <svg id="arrow_left" viewBox="0 -50 96 192" xmlns="http://www.w3.org/2000/svg">
-              <path d="M84,44H21.656l21.456-21.456c1.562-1.562,1.562-4.095,0.001-5.657c-1.562-1.562-4.096-1.562-5.658,0L9.172,45.171l0,0  c-0.186,0.186-0.352,0.391-0.498,0.61c-0.067,0.101-0.114,0.21-0.171,0.315c-0.067,0.124-0.142,0.242-0.196,0.373  c-0.056,0.135-0.088,0.276-0.129,0.416c-0.032,0.111-0.075,0.217-0.098,0.331C8.028,47.475,8,47.737,8,48l0,0  c0,0.003,0.001,0.005,0.001,0.008c0,0.259,0.027,0.519,0.078,0.774c0.024,0.121,0.069,0.232,0.104,0.349  c0.039,0.133,0.07,0.268,0.123,0.397c0.058,0.139,0.136,0.265,0.208,0.396c0.054,0.098,0.096,0.198,0.159,0.292  c0.147,0.221,0.314,0.427,0.501,0.614l28.282,28.281c1.562,1.562,4.095,1.562,5.657,0.001c1.562-1.562,1.562-4.096,0-5.658  L21.657,52H84c2.209,0,4-1.791,4-4S86.209,44,84,44z" style="fill:white;"/>
+              <path d="M84 44H21.656l21.456-21.456c1.562-1.562 1.562-4.095.001-5.657-1.562-1.562-4.096-1.562-5.658 0L9.172 45.171c-.186.186-.352.391-.498.61-.067.101-.114.21-.171.315-.067.124-.142.242-.196.373-.056.135-.088.276-.129.416-.032.111-.075.217-.098.331-.052.259-.08.521-.08.784 0 .003.001.005.001.008 0 .259.027.519.078.774.024.121.069.232.104.349.039.133.07.268.123.397.058.139.136.265.208.396.054.098.096.198.159.292.147.221.314.427.501.614l28.282 28.281c1.562 1.562 4.095 1.562 5.657.001 1.562-1.562 1.562-4.096 0-5.658L21.657 52H84c2.209 0 4-1.791 4-4s-1.791-4-4-4z" style="fill:white"/>
             </svg>
           </div>
           <div class="flip-book-nav-forwards">
             <svg id="arrow_right" viewBox="0 -50 96 192" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12,52h62.344L52.888,73.456c-1.562,1.562-1.562,4.095-0.001,5.656c1.562,1.562,4.096,1.562,5.658,0l28.283-28.284l0,0  c0.186-0.186,0.352-0.391,0.498-0.609c0.067-0.101,0.114-0.21,0.172-0.315c0.066-0.124,0.142-0.242,0.195-0.373  c0.057-0.135,0.089-0.275,0.129-0.415c0.033-0.111,0.076-0.217,0.099-0.331C87.973,48.525,88,48.263,88,48l0,0  c0-0.003-0.001-0.006-0.001-0.009c-0.001-0.259-0.027-0.519-0.078-0.774c-0.024-0.12-0.069-0.231-0.104-0.349  c-0.039-0.133-0.069-0.268-0.123-0.397c-0.058-0.139-0.136-0.265-0.208-0.396c-0.054-0.098-0.097-0.198-0.159-0.292  c-0.146-0.221-0.314-0.427-0.501-0.614L58.544,16.888c-1.562-1.562-4.095-1.562-5.657-0.001c-1.562,1.562-1.562,4.095,0,5.658  L74.343,44L12,44c-2.209,0-4,1.791-4,4C8,50.209,9.791,52,12,52z" style="fill:white;"/>
+              <path d="M12 52h62.344L52.888 73.456c-1.562 1.562-1.562 4.095-.001 5.656 1.562 1.562 4.096 1.562 5.658 0l28.283-28.284c.186-.186.352-.391.498-.609.067-.101.114-.21.172-.315.066-.124.142-.242.195-.373.057-.135.089-.275.129-.415.033-.111.076-.217.099-.331.052-.26.079-.522.079-.785 0-.003-.001-.006-.001-.009-.001-.259-.027-.519-.078-.774-.024-.12-.069-.231-.104-.349-.039-.133-.069-.268-.123-.397-.058-.139-.136-.265-.208-.396-.054-.098-.097-.198-.159-.292-.146-.221-.314-.427-.501-.614L58.544 16.888c-1.562-1.562-4.095-1.562-5.657-.001-1.562 1.562-1.562 4.095 0 5.658L74.343 44H12c-2.209 0-4 1.791-4 4s1.791 4 4 4z" style="fill:white"/>
             </svg>
           </div>
         </div>
-        <div id="fp1" class="flip-page fp-1"></div>
-        <div id="fp2" class="flip-page fp-2"></div>
-        <div id="fp3" class="flip-page fp-3"></div>
       </div>
     </section>
+
     <script type="text/javascript">
+      document.querySelector('#flip-book-a').addEventListener("click", function(e) {
+        //console.log(e);
+        if(e.target.parentNode.className == "flip-book-nav-backwards"||e.target.parentNode.parentNode.className=="flip-book-nav-backwards") {
+          backward();
+        }
+        if(e.target.parentNode.className == "flip-book-nav-forwards"||e.target.parentNode.parentNode.className=="flip-book-nav-forwards") {
+          forward();
+        }
+      });
+      function slideshow() {
+          setInterval(function() {forward();console.log('forward');}, 6000);
+          console.log('slideshow');
+      }
+      //document.querySelector('#flip-book-a').addEventListener("onload", slideshow());
+      var counter = 0;
+      function forward() {
+        if(counter == 2) {
+          counter = 0;
+        } else { counter++; }
+        toggleZ(counter);
+      }
+      function backward() {
+        if(counter == 0) {
+          counter = 2;;
+        } else { counter--; }
+        toggleZ(counter);
+      }
+      function toggleZ(i) {
+        var n = i;
+          switch(n) {
+              case 0:
+                document.getElementById('fp1').classList.add('selected');
+                document.getElementById('fp2').classList.remove('selected');
+                document.getElementById('fp3').classList.remove('selected');
+                break;
+              case 1:
+                document.getElementById('fp2').classList.add('selected');
+                document.getElementById('fp3').classList.remove('selected');
+                document.getElementById('fp1').classList.remove('selected');
+                break;
+              case 2:
+                document.getElementById('fp3').classList.add('selected');
+                document.getElementById('fp1').classList.remove('selected');
+                document.getElementById('fp2').classList.remove('selected');
+                break;
+          }
+        }
     </script>
+    <section>
+      <a class=""></a>
+      <div class=""></div>
+    </section>
+    <section>
+      <a class="label">nav panel</a>
+      <div class="panel">
+        <div class="panelDesc">Checkout Other Items</div>
+        <div class="panel-nav-backward">
+            <a href="/">
+              <svg viewBox="500 500 1200 1200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1331 672q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/>
+              </svg>
+              <span class="panel-nav-text">hippopotomus</span>
+            </a>
+        </div>
+        <div class="panel-nav-forward">
+            <a href="/">
+              <span class="panel-nav-text">jackal</span>
+              <svg viewBox="500 500 1200 1200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1299 1088q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/>
+              </svg>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">tiles with labels</a>
+      <div class="tiles-label">
+        <h2 class="tiles-label-header">tiles md</h2>
+
+        <div class="tiles-label-wrap">
+          <div class="tile-label-md"></div>
+          <div class="tile-label-text">
+            <div class="tile-label-text-title">Example Label</div>
+            <div class="tile-label-text-subtitle">and some smaller text</div>
+          </div>
+        </div>
+        <div class="tiles-label-wrap">
+          <div class="tile-md"></div>
+          <div class="tile-label-text">
+            <div class="tile-label-text-title">Example Label</div>
+            <div class="tile-label-text-subtitle">and some smaller text</div>
+          </div>
+        </div>
+        <div class="tiles-label-wrap">
+          <div class="tile-md"></div>
+          <div class="tile-label-text">
+            <div class="tile-label-text-title">Example Label</div>
+            <div class="tile-label-text-subtitle">and some smaller text</div>
+          </div>
+        </div>
+        <div class="tiles-label-wrap">
+          <div class="tile-md"></div>
+          <div class="tile-label-text">
+            <div class="tile-label-text-title">Example Label</div>
+            <div class="tile-label-text-subtitle">and some smaller text</div>
+          </div>
+        </div>
+        <div class="tiles-label-wrap">
+          <div class="tile-md"></div>
+          <div class="tile-label-text">
+            <div class="tile-label-text-title">Example Label</div>
+            <div class="tile-label-text-subtitle">and some smaller text</div>
+          </div>
+        </div>
+        <div class="tiles-label-wrap">
+          <div class="tile-md"></div>
+          <div class="tile-label-text">
+            <div class="tile-label-text-title">Example Label</div>
+            <div class="tile-label-text-subtitle">and some smaller text</div>
+          </div>
+        </div>
+        <div class="tiles-label-wrap">
+          <div class="tile-md"></div>
+          <div class="tile-label-text">
+            <div class="tile-label-text-title">Example Label</div>
+            <div class="tile-label-text-subtitle">and some smaller text</div>
+          </div>
+        </div>
+        <div class="tiles-label-wrap">
+          <div class="tile-md"></div>
+          <div class="tile-label-text">
+            <div class="tile-label-text-title">Example Label</div>
+            <div class="tile-label-text-subtitle">and some smaller text</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <a class="label">banner with button link</a>
+      <div class="banner-link">
+        <div class="banner-link-text">
+          <div class="txt-lg">this is a banner</div>
+          <p class="txt-md">some more text here</p>
+        </div>
+        <div class="banner-link-button">
+          <a href="" class="banner-link-button-element">this is a link→</a>
+        </div>
+      </div>
+
+    </section>
+
     <section>
       <a class="label">footer nav</a>
       <div class="footer-nav">
@@ -266,7 +437,6 @@
       </div>
     </section>
 
-
   </body>
 
   <svg height="0" width="0" class="defs-only" viewBox="0 -30 300 250" xmlns="http://www.w3.org/2000/svg">
@@ -274,7 +444,5 @@
       <polygon alignment-baseline="middle" points="211.7,91 150,1 149.4,1 88,91 0,1 0,1 0,217 300,217 300,1" fill="#1fc8db"/>
     </symbol>
   </svg>
-
-
 
 </html>

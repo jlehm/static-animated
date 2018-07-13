@@ -1,0 +1,43 @@
+.tiles-label {
+  overflow: auto;
+  margin: 2vw auto;
+  width: 94vw;
+}
+.tiles-label-header {
+  padding: 0 0.75vw;
+}
+.tiles-label-wrap {
+  display: inline-block;
+  width: 22vw;
+  /* height: 20vw; */
+  margin: 0 0.6vw;
+}
+.tile-label-text {
+  display: inline-block;
+  width: 21vw;
+  margin: 1vw 0.5vw;
+}
+.tile-label-text-title {
+  font-family: 'Amsi Pro Ultra';
+  font-size: 1.1em;
+}
+
+.tile-label-text-subtitle {
+  font-size: 1em;
+  font-family: 'Freight Sans Pro';
+}
+
+.tile-md-spc {
+  width: 22vw;
+  height: 22vw;
+}
+.tile-label-md {
+  width: 22vw;
+  height: 22vw;
+  /* min-width: 100px; */
+  /* min-height: 100px; */
+  float: left;
+  background: lightgrey;
+  /* margin: 0.75vw; */
+  overflow: auto;
+}

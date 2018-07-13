@@ -1,7 +1,72 @@
 /**
  * fonts
  */
+ @font-face{
+     font-family:'Freight Sans Pro';
+     src:url('../fonts/FreightSans/FreightSans-Pro.ttf') format('truetype');
+ }
+ @font-face{
+     font-family:'Freight Sans Pro Light';
+     src:url('../fonts/FreightSans/FreightSans-Pro-Light.ttf') format('truetype');
+ }
+ @font-face{
+     font-family:'Freight Sans Pro Medium';
+     src:url('../fonts/FreightSans/FreightSans-Pro-Medium.ttf') format('truetype');
+ }
+ @font-face{
+     font-family:'Freight Sans Pro Bold';
+     src:url('../fonts/FreightSans/FreightSans-Pro-Bold.ttf') format('truetype');
+ }
+ @font-face{
+   font-family:'Freight Sans Pro Light Italic';
+   src:url('../fonts/FreightSans/FreightSans-Pro-Light-Italic.ttf') format('truetype');
+ }
+ @font-face{
+   font-family:'Freight Sans Pro Bold Italic';
+   src:url('../fonts/FreightSans/FreightSans-Pro-Bold-Italic.ttf') format('truetype');
+ }
+ @font-face{
+   font-family:'Freight Sans Book';
+   src:url('../fonts/FreightSans/FreightSans-Pro-Book.ttf') format('truetype');
+ }
 
+
+
+
+ @font-face{
+     font-family:'Proxima Nova';
+     src:url('../fonts/ProximaNova/ProximaNova.ttf') format('truetype');
+     font-style:normal
+ }
+
+ @font-face{
+     font-family:'Proxima Nova Bold';
+     src:url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+     font-style:normal
+ }
+
+@font-face{
+   font-family:'Proxima Nova Bold Italic';
+   src:url('../fonts/ProximaNova/ProximaNova-BoldItalic.ttf') format('truetype');
+   font-style:normal
+}
+
+@font-face{
+   font-family:'Proxima Nova Italic';
+   src:url('../fonts/ProximaNova/ProximaNova-Italic.ttf') format('truetype');
+   font-style:normal
+}
+
+ @font-face{
+     font-family:'Proxima Nova Light';
+     src:url('../fonts/ProximaNova/ProximaNovaLight.ttf') format('truetype');
+     font-style:normal
+ }
+ @font-face{
+     font-family:'Proxima Nova Light Italic';
+     src:url('../fonts/ProximaNova/ProximaNovaLight-Italic.ttf') format('truetype');
+     font-style:normal
+ }
 @font-face{
     font-family:'Roboto';
     src:url('../fonts/Roboto/Roboto-Black.eot');

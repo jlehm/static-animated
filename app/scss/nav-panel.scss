@@ -1,0 +1,64 @@
+.panel {
+  font-size: 1.25em;
+  font-family: 'Roboto';
+  padding: 5vw 0;
+  overflow: auto;
+  svg {
+    width: 5vw;
+    height: 5vw;
+    display: inline;
+    vertical-align: middle;
+    //padding: 0 5vw;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+  }
+}
+.panelDesc {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin: 0.5em 0;
+  font-family: 'Amsi Pro Ultra';
+}
+.panel-nav-backward {
+  width: 40vw;
+  padding: 0 5vw;
+  float: left;
+  display: inline-block;
+  div {
+    display: inline-block;
+  }
+}
+.panel-nav-backward:hover {
+  color: #666;
+  fill: #666;
+  cursor: pointer;
+}
+.panel-nav-forward {
+  width: 40vw;
+  padding: 0 5vw;
+  float: right;
+  text-align: right;
+  display: inline-block;
+  div {
+    display: inline-block;
+  }
+  svg {
+    float:right;
+  }
+}
+.panel-nav-forward:hover {
+  color: #666;
+  fill: #666;
+  cursor:pointer;
+}
+.panel-nav-text {
+   //width: 30%;
+   //text-align: center;
+   line-height: 5vw;
+   padding: 0 2.5vw;
+}

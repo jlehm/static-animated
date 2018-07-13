@@ -15,5 +15,9 @@ import './app/scss/list-banner.scss';
 import './app/scss/footer-nav.scss';
 import './app/scss/icon-spread.scss';
 import './app/scss/flip-book.scss';
+import './app/scss/nav-panel.scss';
+import './app/scss/banner-link.scss';
+import './app/scss/tiles-labels.scss';
+
 
 console.log('loading complete');
