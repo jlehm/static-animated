@@ -9,21 +9,21 @@
   "author": "jlehm",
   "license": "ISC",
   "dependencies": {
-    "aos": "^2.2.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
+    "aos": "^2.3.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "extract-text-webpack-plugin": "^3.0.2"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^4.5.1",
+    "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^2.30.1",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.9.3",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "url-loader": "^0.6.2",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.2"
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.11.3"
   }
 }
